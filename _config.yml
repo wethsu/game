@@ -1,0 +1,23 @@
+# _config.yml
+encoding: utf-8
+
+# baseurl 的設定對於 GitHub Pages 專案來說非常重要
+# 如果你的網站網址是 user.github.io/game1/ (這表示它是一個子路徑專案)
+# 那麼 baseurl 就必須設定為 "/game1" (也就是你的儲存庫名稱)
+# 如果你的網站網址是 user.github.io/ (這表示它是一個使用者/組織網站，儲存庫名稱為 user.github.io)
+# 那麼 baseurl 應該設定為 "" (空字串)
+# 大多數情況下，由於你是獨立的 game1 儲存庫，會是前者。
+baseurl: "/game1" # 請替換為你的儲存庫名稱，如果儲存庫就叫 game1
+
+# Jekyll 預設的排除列表，確保它不會處理不該處理的檔案或資料夾
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .git/
+  - README.md # 如果你有這個檔案
+  - CNAME # 如果你有這個檔案
+  - .github/ # 如果你使用了 GitHub Actions (即使沒有，保留也無妨)
